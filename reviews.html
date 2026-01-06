@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Read customer reviews and testimonials about Busycooks restaurant. Share your dining experience with us.">
+    <meta name="keywords" content="reviews, testimonials, customer feedback, Busycooks, ratings">
+    <title>Customer Reviews - Busycooks Restaurant</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Busycooks</a>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="orders.html">Order Service</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="navbar-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="section"
+        style="margin-top: 80px; text-align: center; background: var(--gradient-primary); color: white; padding: 3rem 1rem;">
+        <h1 style="color: white;">Customer Reviews</h1>
+        <p style="font-size: 1.25rem; opacity: 0.95;">Share your experience with us</p>
+    </section>
+
+    <!-- Add Review Form Section -->
+    <section class="section">
+        <div style="max-width: 600px; margin: 0 auto;">
+            <div class="glass-card">
+                <h3 class="text-center" style="margin-bottom: 1.5rem;">Leave a Review</h3>
+
+                <form id="review-form">
+                    <div class="form-group">
+                        <label for="reviewer-name" class="form-label">Your Name</label>
+                        <input type="text" id="reviewer-name" class="form-input" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rating" class="form-label">Rating</label>
+                        <div style="display: flex; gap: 0.5rem; font-size: 2rem;">
+                            <span class="star" data-rating="1">☆</span>
+                            <span class="star" data-rating="2">☆</span>
+                            <span class="star" data-rating="3">☆</span>
+                            <span class="star" data-rating="4">☆</span>
+                            <span class="star" data-rating="5">☆</span>
+                        </div>
+                        <input type="hidden" id="rating" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="review-text" class="form-label">Your Review</label>
+                        <textarea id="review-text" class="form-input" rows="5"
+                            placeholder="Tell us about your experience at Busycooks..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Review</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section" style="background: linear-gradient(135deg, #FFF5F7 0%, #FFE4E9 100%);">
+        <div class="section-header">
+            <h2 class="section-title">What Our Guests Say</h2>
+            <p class="section-subtitle" id="review-count">0 reviews</p>
+        </div>
+
+        <div id="reviews-container" class="grid grid-3">
+            <!-- Reviews will be dynamically loaded here -->
+        </div>
+
+        <div id="no-reviews" style="text-align: center; padding: 3rem 1rem; display: none;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">📝</div>
+            <h3>No reviews yet</h3>
+            <p style="color: var(--color-gray);">Be the first to share your experience!</p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section text-center" style="background: var(--gradient-primary); color: white; padding: 3rem 1rem;">
+        <h2 style="color: white; margin-bottom: 1rem;">Ready to Create Your Own Story?</h2>
+        <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.95;">Join our satisfied guests and experience
+            excellence</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="menu.html" class="btn btn-secondary">View Menu</a>
+            <a href="contact.html" class="btn" style="background: white; color: var(--color-primary);">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Busycooks</h3>
+                <p>Professional catering, event equipment rental, and premium dining services. We make every occasion
+                    unique, memorable and effortless.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="menu.html">Menu</a></p>
+                <p><a href="gallery.html">Gallery</a></p>
+                <p><a href="about.html">About Us</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📍 792 Goodhope Road, Westgate, Harare</p>
+                <p>📞 +263 771 166 460 | +263 778 880 894</p>
+                <p>✉️ busycook44@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Busycooks. All rights reserved. | Website designed by Inferth Projects</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Star rating system
+        let selectedRating = 0;
+        const stars = document.querySelectorAll('.star');
+        const ratingInput = document.getElementById('rating');
+
+        stars.forEach(star => {
+            star.addEventListener('click', function () {
+                selectedRating = parseInt(this.getAttribute('data-rating'));
+                ratingInput.value = selectedRating;
+                updateStars();
+            });
+
+            star.addEventListener('mouseenter', function () {
+                const rating = parseInt(this.getAttribute('data-rating'));
+                highlightStars(rating);
+            });
+        });
+
+        document.querySelector('.star').parentElement.addEventListener('mouseleave', function () {
+            updateStars();
+        });
+
+        function highlightStars(rating) {
+            stars.forEach(star => {
+                const starRating = parseInt(star.getAttribute('data-rating'));
+                star.textContent = starRating <= rating ? '⭐' : '☆';
+            });
+        }
+
+        function updateStars() {
+            stars.forEach(star => {
+                const starRating = parseInt(star.getAttribute('data-rating'));
+                star.textContent = starRating <= selectedRating ? '⭐' : '☆';
+            });
+        }
+
+        // Review submission
+        document.getElementById('review-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('reviewer-name').value.trim();
+            const rating = parseInt(document.getElementById('rating').value);
+            const text = document.getElementById('review-text').value.trim();
+
+            if (!name || !rating || !text) {
+                alert('Please fill in all fields and select a rating.');
+                return;
+            }
+
+            // Create review object
+            const review = {
+                id: Date.now(),
+                name: name,
+                rating: rating,
+                text: text,
+                date: new Date().toLocaleDateString()
+            };
+
+            // Get existing reviews from localStorage
+            let reviews = JSON.parse(localStorage.getItem('busycooksReviews') || '[]');
+
+            // Add new review
+            reviews.unshift(review); // Add to beginning of array
+
+            // Save to localStorage
+            localStorage.setItem('busycooksReviews', JSON.stringify(reviews));
+
+            // Clear form
+            document.getElementById('review-form').reset();
+            selectedRating = 0;
+            updateStars();
+
+            // Reload reviews
+            loadReviews();
+
+            // Show success message
+            alert('Thank you for your review!');
+        });
+
+        // Load reviews
+        function loadReviews() {
+            const reviews = JSON.parse(localStorage.getItem('busycooksReviews') || '[]');
+            const container = document.getElementById('reviews-container');
+            const noReviews = document.getElementById('no-reviews');
+            const reviewCount = document.getElementById('review-count');
+
+            reviewCount.textContent = `${reviews.length} review${reviews.length !== 1 ? 's' : ''}`;
+
+            if (reviews.length === 0) {
+                container.style.display = 'none';
+                noReviews.style.display = 'block';
+                return;
+            }
+
+            container.style.display = 'grid';
+            noReviews.style.display = 'none';
+
+            container.innerHTML = reviews.map(review => `
+                <div class="glass-card">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                        <div>
+                            <h4>${review.name}</h4>
+                            <p style="color: var(--color-gray); font-size: 0.875rem;">${review.date}</p>
+                        </div>
+                        <div style="color: #FFD700; font-size: 1.25rem;">${'⭐'.repeat(review.rating)}</div>
+                    </div>
+                    <p style="color: var(--color-gray);">${review.text}</p>
+                </div>
+            `).join('');
+        }
+
+        // Load reviews on page load
+        loadReviews();
+    </script>
+</body>
+
+</html>

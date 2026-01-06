@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact Busycooks restaurant. Make reservations, get directions, or reach out with questions. We're here to help.">
+    <meta name="keywords" content="contact, reservations, location, Busycooks, contact form, catering">
+    <title>Contact Us - Busycooks Restaurant</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Busycooks</a>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="orders.html">Order Service</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="navbar-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="section"
+        style="margin-top: 80px; text-align: center; background: var(--gradient-primary); color: white; padding: 3rem 1rem;">
+        <h1 style="color: white;">Get In Touch</h1>
+        <p style="font-size: 1.25rem; opacity: 0.95;">We'd love to hear from you</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="grid grid-2" style="gap: 3rem; align-items: start;">
+            <!-- Contact Form -->
+            <div class="glass-card">
+                <h3 style="margin-bottom: 1.5rem;">Send Us a Message</h3>
+
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" class="form-input" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" class="form-input" placeholder="john@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone Number (Optional)</label>
+                        <input type="tel" id="phone" class="form-input" placeholder="0772 123 456">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <select id="subject" class="form-select" required>
+                            <option value="">Select a subject</option>
+                            <option value="reservation">Table Reservation</option>
+                            <option value="catering">Catering Inquiry</option>
+                            <option value="events">Event Equipment Rental</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" class="form-textarea" placeholder="Tell us how we can help you..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <div class="glass-card" style="margin-bottom: 2rem;">
+                    <h3 style="margin-bottom: 1.5rem;">Contact Information</h3>
+
+                    <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; align-items: start;">
+                        <div style="font-size: 2rem;">📍</div>
+                        <div>
+                            <h4 style="margin-bottom: 0.25rem;">Location</h4>
+                            <p style="color: var(--color-gray);"><strong>Main Office:</strong> 792 Goodhope Road,
+                                Westgate, Harare</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; align-items: start;">
+                        <div style="font-size: 2rem;">📞</div>
+                        <div>
+                            <h4 style="margin-bottom: 0.25rem;">Phone</h4>
+                            <p style="color: var(--color-gray);">+263 771 166 460<br>+263 778 880 894</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; align-items: start;">
+                        <div style="font-size: 2rem;">✉️</div>
+                        <div>
+                            <h4 style="margin-bottom: 0.25rem;">Email</h4>
+                            <p style="color: var(--color-gray);">busycook44@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; align-items: start;">
+                        <div style="font-size: 2rem;">🕒</div>
+                        <div>
+                            <h4 style="margin-bottom: 0.25rem;">Hours</h4>
+                            <p style="color: var(--color-gray);">
+                                Monday - Friday: 8:00 AM - 5:00 PM<br>
+                                Saturday - Sunday: 8:00 AM - 12:00 AM
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section" style="background: linear-gradient(135deg, #FFF5F7 0%, #FFE4E9 100%);">
+        <div class="section-header">
+            <h2 class="section-title">Find Us</h2>
+            <p class="section-subtitle">Visit us at our locations</p>
+        </div>
+
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <div
+                style="background: white; border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-lg); padding: 3rem; text-align: center;">
+                <div style="font-size: 5rem; margin-bottom: 1rem;">🗺️</div>
+                <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Visit Our Offices</h3>
+                <p style="color: var(--color-gray); margin-bottom: 1rem;"><strong>Main Office:</strong> 792 Goodhope
+                    Road, Westgate, Harare</p>
+                <p style="color: var(--color-gray); margin-bottom: 1.5rem;">Our friendly staff will assist you with all
+                    your catering and event needs.</p>
+                <a href="https://maps.google.com" target="_blank" class="btn btn-primary">Get Directions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Actions Section -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">Quick Actions</h2>
+        </div>
+
+        <div class="grid grid-3">
+            <div class="glass-card text-center">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">📅</div>
+                <h3>Make a Reservation</h3>
+                <p style="color: var(--color-gray); margin-bottom: 1rem;">Book your table in advance for dining</p>
+                <a href="orders.html" class="btn btn-outline">Make your Order</a>
+            </div>
+
+            <div class="glass-card text-center">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🍽️</div>
+                <h3>Event Catering</h3>
+                <p style="color: var(--color-gray); margin-bottom: 1rem;">Professional catering for all occasions</p>
+                <a href="orders.html" class="btn btn-outline">Catering Inquiry</a>
+            </div>
+
+            <div class="glass-card text-center">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🎪</div>
+                <h3>Equipment Rental</h3>
+                <p style="color: var(--color-gray); margin-bottom: 1rem;">Tents, tables, chairs, décor and more</p>
+                <a href="orders.html" class="btn btn-outline">Rental Inquiry</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Busycooks</h3>
+                <p>Professional catering, event equipment rental, and premium dining services. We make every occasion
+                    unique, memorable and effortless.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="menu.html">Menu</a></p>
+                <p><a href="gallery.html">Gallery</a></p>
+                <p><a href="about.html">About Us</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📍 792 Goodhope Road, Westgate, Harare</p>
+                <p>📞 +263 771 166 460 | +263 778 880 894</p>
+                <p>✉️ busycook44@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Busycooks. All rights reserved. | Website designed by Inferth Projects</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

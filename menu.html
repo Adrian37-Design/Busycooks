@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Busycooks menu - fine dining, fast food, and catering services. Premium quality dishes prepared by expert chefs.">
+    <meta name="keywords" content="menu, restaurant menu, fine dining, catering services, events, Busycooks">
+    <title>Menu - Busycooks Restaurant</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Busycooks</a>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="orders.html">Order Service</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="navbar-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="section"
+        style="margin-top: 80px; text-align: center; background: var(--gradient-primary); color: white; padding: 3rem 1rem;">
+        <h1 style="color: white;">Our Menu</h1>
+        <p style="font-size: 1.25rem; opacity: 0.95;">Discover culinary excellence across our three unique concepts</p>
+        <p style="font-size: 1rem; opacity: 0.9; margin-top: 0.5rem; font-style: italic;">We offer a variety of dishes -
+            your imagination is your only limitation!</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section">
+        <div class="menu-filters">
+            <button class="filter-btn active" data-filter="all">All Items</button>
+            <button class="filter-btn" data-filter="fine-dining">Fine Dining</button>
+            <button class="filter-btn" data-filter="fast-food">Fast Food</button>
+            <button class="filter-btn" data-filter="cafe">Catering Services</button>
+        </div>
+
+        <div class="grid grid-3">
+            <!-- Fine Dining Items -->
+            <div class="menu-item" data-category="fine-dining">
+                <img src="images/sadza-fine-dining.png" alt="Sadza and Beef Stew" class="menu-item-image">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h4 class="menu-item-title">Sadza and Beef Stew</h4>
+                    </div>
+                    <p class="menu-item-description">Traditional Zimbabwean sadza served with rich beef stew, leafy
+                        green vegetables, and tomato relish. Authentic local flavors.</p>
+                    <span class="menu-item-category">Fine Dining</span>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="fine-dining">
+                <img src="images/jollof-rice.png" alt="Jollof Rice with Chicken" class="menu-item-image">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h4 class="menu-item-title">Jollof Rice with Grilled Chicken</h4>
+                    </div>
+                    <p class="menu-item-description">West African classic - spicy tomato rice with tender grilled
+                        chicken, garnished with fresh vegetables on an elegant plate.</p>
+                    <span class="menu-item-category">Fine Dining</span>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="fine-dining">
+                <img src="images/pap-wors.png" alt="Pap and Wors" class="menu-item-image">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h4 class="menu-item-title">Pap and Wors</h4>
+                    </div>
+                    <p class="menu-item-description">South African specialty - creamy pap served with grilled boerewors
+                        sausage and chakalaka relish. Elegant presentation.</p>
+                    <span class="menu-item-category">Fine Dining</span>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="fine-dining">
+                <img src="images/ugali-fish.png" alt="Grilled Fish with Ugali" class="menu-item-image">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h4 class="menu-item-title">Grilled Tilapia with Ugali</h4>
+                    </div>
+                    <p class="menu-item-description">East African delight - perfectly grilled tilapia served with ugali,
+                        sukuma wiki, and tangy tomato sauce.</p>
+                    <span class="menu-item-category">Fine Dining</span>
+                </div>
+            </div>
+
+            <!-- Fast Food Items -->
+            <div class="menu-item" data-category="fast-food">
+                <img src="images/sadza-kapenta.png" alt="Sadza with Kapenta" class="menu-item-image">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h4 class="menu-item-title">Sadza with Kapenta</h4>
+                    </div>
+                    <p class="menu-item-description">Quick and satisfying - traditional sadza with fried kapenta,
+                        greens,
+                        and tomato. A Zimbabwean favorite.</p>
+                    <span class="menu-item-category">Fast Food</span>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="fast-food">
+                <img src="images/grilled-steak.png" alt="Grilled Steak" class="menu-item-image">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h4 class="menu-item-title">Grilled Steak with Vegetables</h4>
+                    </div>
+                    <p class="menu-item-description">Juicy grilled steak served with roasted vegetables and crispy
+                        fries.
+                        A hearty meal.</p>
+                    <span class="menu-item-category">Fast Food</span>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="fast-food">
+                <img src="images/burger.png" alt="Chicken Burger" class="menu-item-image">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h4 class="menu-item-title">Chicken Burger & Chips</h4>
+                    </div>
+                    <p class="menu-item-description">Crispy chicken burger with lettuce, tomato, mayo, and golden french
+                        fries.</p>
+                    <span class="menu-item-category">Fast Food</span>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="fast-food">
+                <img src="images/fish-chips.png" alt="Fish and Chips" class="menu-item-image">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h4 class="menu-item-title">Fish & Chips</h4>
+                    </div>
+                    <p class="menu-item-description">Crispy battered fish with golden fries and tartar sauce. Classic
+                        comfort food.</p>
+                    <span class="menu-item-category">Fast Food</span>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="fast-food">
+                <img src="images/rice-chicken-stew.png" alt="Rice & Chicken Stew" class="menu-item-image">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h4 class="menu-item-title">Rice & Chicken Stew</h4>
+                    </div>
+                    <p class="menu-item-description">Steamed rice served with flavorful chicken stew and mixed
+                        vegetables.</p>
+                    <span class="menu-item-category">Fast Food</span>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="fast-food">
+                <img src="images/sadza-beans.png" alt="Sadza with Beans" class="menu-item-image">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h4 class="menu-item-title">Sadza with Beans</h4>
+                    </div>
+                    <p class="menu-item-description">Hearty sadza with tasty beans and vegetable relish. Simple and
+                        delicious.</p>
+                    <span class="menu-item-category">Fast Food</span>
+                </div>
+            </div>
+
+            <!-- Catering Services -->
+            <div class="menu-item" data-category="cafe">
+                <img src="images/zimbabwean-catering.png" alt="Traditional Zimbabwean Catering" class="menu-item-image">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h4 class="menu-item-title">Traditional Zimbabwean Catering</h4>
+                    </div>
+                    <p class="menu-item-description">Authentic Zimbabwean feast - sadza, meats, vegetables, and
+                        traditional sides for your event.</p>
+                    <span class="menu-item-category">Catering Services</span>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="cafe">
+                <img src="images/fried-rice-chicken.png" alt="Western Catering" class="menu-item-image">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h4 class="menu-item-title">Western Buffet Catering</h4>
+                    </div>
+                    <p class="menu-item-description">Pasta, grilled chicken, rice dishes, salads, and sides. Perfect for
+                        corporate events and parties.</p>
+                    <span class="menu-item-category">Catering Services</span>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="cafe">
+                <img src="images/catering-buffet.jpg" alt="African Catering Mix" class="menu-item-image">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h4 class="menu-item-title">Pan-African Catering</h4>
+                    </div>
+                    <p class="menu-item-description">Mix of African favorites - Jollof rice, fufu, pap, grilled meats,
+                        and traditional sides. Celebration catering.</p>
+                    <span class="menu-item-category">Catering Services</span>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="cafe">
+                <img src="images/dessert.png" alt="Dessert Catering" class="menu-item-image">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h4 class="menu-item-title">Dessert & Pastry Service</h4>
+                    </div>
+                    <p class="menu-item-description">Selection of desserts, pastries, and sweet treats for your event.
+                        Includes cakes, pastries, and fruit platters.</p>
+                    <span class="menu-item-category">Catering Services</span>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="cafe">
+                <img src="images/Equipment.png" alt="Equipment Rental" class="menu-item-image">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h4 class="menu-item-title">Event Equipment Rental</h4>
+                    </div>
+                    <p class="menu-item-description">Full event setup including chafing dishes, serving utensils,
+                        tables, chairs, and linens. Make your event stress-free.</p>
+                    <span class="menu-item-category">Catering Services</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Orders Section -->
+    <section class="section" style="background: linear-gradient(135deg, #FFF5F7 0%, #FFE4E9 100%);">
+        <div class="section-header" style="text-align: center;">
+            <h2 class="section-title">Can't Find What You're Looking For?</h2>
+            <p class="section-subtitle" style="max-width: 700px; margin: 0 auto; font-size: 1.125rem;">
+                We offer a variety of dishes beyond this menu. From traditional Zimbabwean meals to international
+                cuisine,
+                <strong>your imagination is your only limitation!</strong> Contact us with your specific requirements
+                and we'll make it happen.
+            </p>
+            <a href="orders.html" class="btn btn-primary" style="margin-top: 1.5rem;">Request Custom Dish</a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section text-center" style="background: var(--gradient-primary); color: white; padding: 3rem 1rem;">
+        <h2 style="color: white; margin-bottom: 1rem;">Ready to Order?</h2>
+        <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.95;">Experience these delicious dishes today</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="orders.html" class="btn btn-secondary">Place Order</a>
+            <a href="contact.html" class="btn" style="background: white; color: var(--color-primary);">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Busycooks</h3>
+                <p>Professional catering, event equipment rental, and premium dining services. We make every occasion
+                    unique, memorable and effortless.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="menu.html">Menu</a></p>
+                <p><a href="gallery.html">Gallery</a></p>
+                <p><a href="about.html">About Us</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📍 792 Goodhope Road, Westgate, Harare</p>
+                <p>📞 +263 771 166 460 | +263 778 880 894</p>
+                <p>✉️ busycook44@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Busycooks. All rights reserved. | Website designed by Inferth Projects</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

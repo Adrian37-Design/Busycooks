@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Busycooks - Premium restaurant offering fine dining, event catering services, and equipment rental with elegant ambiance and exceptional service.">
+    <meta name="keywords" content="restaurant, fine dining, catering services, events, Busycooks, equipment rental">
+    <meta name="author" content="Busycooks Restaurant">
+    <title>Busycooks & Deco</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Busycooks</a>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="orders.html">Order Service</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="navbar-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/hero.png" alt="Elegant dining ambiance" class="hero-background">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Busycooks</h1>
+            <p class="hero-subtitle">Where Elegance Meets Exceptional Flavor</p>
+            <div class="hero-buttons">
+                <a href="menu.html" class="btn btn-primary">Explore Menu</a>
+                <a href="orders.html" class="btn btn-secondary">Reserve Table</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Experience culinary excellence across three unique dining concepts</p>
+        </div>
+
+        <div class="grid grid-3">
+            <div class="glass-card text-center">
+                <div style="font-size: 4rem; margin-bottom: 1rem;">🍽️</div>
+                <h3>Fine Dining</h3>
+                <p>Indulge in our exquisite gourmet dishes crafted by world-class chefs using premium ingredients.</p>
+                <a href="menu.html" class="btn btn-outline" style="margin-top: 1rem;">View
+                    Menu</a>
+            </div>
+
+            <div class="glass-card text-center">
+                <div style="font-size: 4rem; margin-bottom: 1rem;">🍔</div>
+                <h3>Fast Food</h3>
+                <p>Enjoy our artisanal fast food options - gourmet burgers, crispy fries, and more, made fresh daily.
+                </p>
+                <a href="menu.html" class="btn btn-outline" style="margin-top: 1rem;">View Menu</a>
+            </div>
+
+            <div class="glass-card text-center">
+                <div style="font-size: 4rem; margin-bottom: 1rem;">☕</div>
+                <h3>Catering Services</h3>
+                <p>Professional catering for all events - corporate functions, weddings, conferences, and special
+                    occasions.</p>
+                <a href="menu.html" class="btn btn-outline" style="margin-top: 1rem;">View Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Menu Section -->
+    <section class="section" style="background: linear-gradient(135deg, #FFF5F7 0%, #FFE4E9 100%);">
+        <div class="section-header">
+            <h2 class="section-title">Featured Dishes</h2>
+            <p class="section-subtitle">Taste our most popular creations</p>
+        </div>
+
+        <div class="grid grid-3">
+            <div class="menu-item">
+                <img src="images/sadza-real.jpg" alt="Sadza with Beans and Stew" class="menu-item-image">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h4 class="menu-item-title">Sadza Traditional Plate</h4>
+                    </div>
+                    <p class="menu-item-description">Traditional sadza with beans, mixed vegetables and rich meat stew.
+                    </p>
+                    <span class="menu-item-category">Local Cuisine</span>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/fried-rice-chicken.png" alt="Fried Rice with BBQ Chicken" class="menu-item-image">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h4 class="menu-item-title">BBQ Chicken & Fried Rice</h4>
+                    </div>
+                    <p class="menu-item-description">Golden fried rice with grilled BBQ chicken, mixed vegetables and
+                        fresh salad.</p>
+                    <span class="menu-item-category">Main Course</span>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="images/fish-chips.png" alt="Fish and Chips" class="menu-item-image">
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h4 class="menu-item-title">Fish & Chips Platter</h4>
+                    </div>
+                    <p class="menu-item-description">Crispy golden fried fish with french fries and fresh garden salad.
+                    </p>
+                    <span class="menu-item-category">Seafood</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 2rem;">
+            <a href="menu.html" class="btn btn-primary">View Full Menu</a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section text-center" style="background: var(--gradient-primary); color: white; padding: 4rem 1rem;">
+        <h2 style="color: white; margin-bottom: 1rem;">Ready to Experience Excellence?</h2>
+        <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.95;">Join us for an unforgettable dining
+            experience</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="orders.html" class="btn btn-secondary">Order Online</a>
+            <a href="contact.html" class="btn" style="background: white; color: var(--color-primary);">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Busycooks</h3>
+                <p>Professional catering, event equipment rental, and premium dining services. We make every occasion
+                    unique, memorable and effortless.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="menu.html">Menu</a></p>
+                <p><a href="gallery.html">Gallery</a></p>
+                <p><a href="about.html">About Us</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📍 792 Goodhope Road, Westgate, Harare</p>
+                <p>📞 +263 771 166 460 | +263 778 880 894</p>
+                <p>✉️ busycook44@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Busycooks. All rights reserved. | Website designed by Inferth Projects</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

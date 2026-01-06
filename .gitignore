@@ -1,0 +1,42 @@
+# Temporary files
+*.tmp
+*.log
+*.backup
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Text extraction files
+content_utf8.txt
+document_content.txt
+document_data.json
+extracted_info.txt
+full_content.txt
+company_info.txt
+
+# Python scripts (extraction utilities)
+extract_docx.py
+extract_full.py
+save_utf8.py
+show_all.py
+update_footers.py
+update_images.py
+view_doc.py
+
+# Word documents
+*.docx
+
+# Editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup files
+*.html.backup
